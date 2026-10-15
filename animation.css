@@ -1,0 +1,207 @@
+.section-title{
+    animation: headingMask linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+}
+
+@keyframes headingMask {
+    0%{
+        opacity: 0;
+        transform: translateY(90px) scale(.75);
+        letter-spacing: 18px;
+        filter: blur(5px);
+    }
+
+    65%{
+        transform: translateY(-8px) scale(1.03);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        letter-spacing: 0;
+        filter: blur(0);
+    }
+}
+
+.card{
+    animation: projectCard linear both;
+    animation-timeline: view();
+}
+
+.card-1{
+    animation-range: entry 0% cover 30%;
+}
+
+.card-2{
+    animation-range: entry 10% cover 40%;
+}
+
+.card-3{
+    animation-range: entry 20% cover 50%;
+}
+
+@keyframes projectCard {
+    from{
+        opacity: 0;
+        transform: perspective(1600px)
+        rotateY(35deg) rotateX(25deg)
+        translateY(150px) scale(0.55);
+        filter: blur(10px);
+    }
+
+    60%{
+        transform: perspective(1600px)
+        rotateY(-5deg) scale(1.05);
+    }
+
+    to{
+        opacity: 1;
+        transform: perspective(1600px)
+        rotateY(0) rotateX(0)
+        translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.image-about-section{
+    animation: aboutImage linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 35%;
+}
+
+@keyframes aboutImage {
+    from{
+        opacity: 0;
+        transform: perspective(1400px)
+        rotateY(-35deg) scale(0.75);
+        clip-path: circle(0%);
+        filter: blur(10px);
+    }
+
+    to{
+        opacity: 1;
+        transform: perspective(1400px)
+        rotateY(0) scale(1);
+        clip-path: circle(100%);
+        filter: blur(0);
+    }
+}
+
+.about-details{
+    animation: aboutDetails linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 35%;
+}
+
+@keyframes aboutDetails {
+    from{
+        opacity: 0;
+        transform: translateY(120px)
+        scale(0.9);
+        filter: blur(10px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+        scale(1);
+        filter: blur(0);
+    }
+}
+
+.card-about{
+    animation: cardAbout linear both;
+    animation-timeline: view();
+}
+
+.card1{
+    animation-range: entry 0% cover 20%;
+}
+
+.card2{
+    animation-range: entry 10% cover 30%;
+}
+
+.card3{
+    animation-range: entry 20% cover 40%;
+}
+
+.card1{
+    animation-range: entry 30% cover 50%;
+}
+
+@keyframes cardAbout {
+    from{
+        opacity: 0;
+        transform: translateY(120px) rotateX(45deg)
+        scale(0.75);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+        rotateX(0) scale(1);
+    }
+}
+
+.service-card{
+    animation: serviceCard linear both;
+    animation-timeline: view();
+}
+
+.service-card1{
+    animation-range: entry 0% cover 25%;
+}
+
+.service-card2{
+    animation-range: entry 10% cover 35%;
+}
+
+@keyframes serviceCard {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.5)
+        rotateX(25deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1)
+        rotateX(0);
+    }
+}
+
+.haed-text,
+.nav-title-link{
+    background: linear-gradient(135deg,
+    #000 0%, #2563eb 35%, #7c3aed 75%,
+    #06b6d4 100%);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-text{
+    animation: contactTitle linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes contactTitle {
+    from{
+        opacity: 0;
+        transform: translateY(130px)
+        scale(0.4);
+        filter: blur(5px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+        scale(1);
+        filter: blur(0);
+    }
+}
+
